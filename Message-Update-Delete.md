@@ -1,3 +1,5 @@
+title: Message Updates and Deletes
+
 # Pattern: Message Updates and Deletes  #
 
 PubNub stores all messages per channel with the Storage & Playback feature add-on. Since it stores all messages in a time series, and doesn't expose Updating and Deleting, you need a simple pattern to implement this functionality. It involves simply publishing the updated versions of messages within the stream. 
