@@ -1,4 +1,8 @@
+---
 title: Message Updates and Deletes
+layout: post
+---
+
 
 # Pattern: Message Updates and Deletes  #
 
