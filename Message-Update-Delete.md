@@ -1,6 +1,5 @@
 ---
 title: Message Updates and Deletes
-layout: post
 ---
 
 
