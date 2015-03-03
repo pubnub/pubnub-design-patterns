@@ -46,7 +46,7 @@ Let's use these two JSON messages as the messages we want to update and delete. 
 
 Using the *Interleaving* pattern, you publish new versions of the same message to the same channel just like normal publishes. The subsequent messages must use the same message_id as the original message, and to simplify rendering, the messages for updates should contain the full content so that the original is not needed.
 
-![Interleave](/images/interleave1.jpg)
+![Interleave]({{ site.baseurl }}/images/interleave1.jpg)
 
 Assuming we already published message 1 and 2 above. We would then publish the updated version (and deleted) to the same channel.
 
@@ -142,7 +142,7 @@ In the Side Channel pattern, you are publishing any updates and deletes to a sep
 
 In the Storage & Playback feature add-on, messages are stored on a per channel basis, this means that the side-channel has only update/delete messages in it, rather than both the orginal messages and the changes.
 
-![Interleave](/images/sidechannel1.jpg)
+![Interleave]({{ site.baseurl }}/images/sidechannel1.jpg)
 
 When retrieving from Storage through history, before retrieving the main channel content you first retrieve all the updates/deletes from the side channel. Then you can process updates/deletes can be processed at the same time as processing the associated original message.
 
