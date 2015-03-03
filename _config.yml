@@ -1,0 +1,13 @@
+# Site settings
+title: PubNub Design Patterns
+email: jasdeep@pubnub.com
+description: > # this means to ignore newlines until "baseurl:"
+    Sample Design Patterns using PubNub to help customers understand various concepts
+    using PubNub messages, channels, channel groups, storage-history, and other concepts.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://scalabl3.github.io/pubnub-design-patterns/" # the base hostname & protocol for your site
+twitter_username: scalabl3
+github_username:  scalabl3
+
+# Build settings
+markdown: kramdown
