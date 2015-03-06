@@ -49,7 +49,7 @@ Using the *Interleaving* pattern, you publish new versions of the same message t
 
 Assuming we already published message 1 and 2 above. We would then publish the updated version (and deleted) to the same channel.
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 pubnub.publish({
     channel: "jasdeep-status",
     message: {
@@ -71,7 +71,7 @@ In this case we have updated part of the text as an additional publish to the ch
 
 While the code for updating display content varies considerably with each platform/UI  framework, a simple example for a single channel follows:
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 
 var message_ids = {}
 var deleted_ids = {};
@@ -151,7 +151,7 @@ This pattern might be a better chocie than Interleave if you are rendering as yo
 
 Assuming we already published message 1 and 2 above. We would then publish the updated version (and deleted) to the same channel.
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 pubnub.publish({
     channel: "jasdeep-status",
     message: {
@@ -171,12 +171,14 @@ pubnub.publish({
 
 While the code for updating display content varies considerably with each platform/UI  framework, a simple example for a single channel follows:
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 
 var message_ids = {}
 var deleted_ids = {};
 var message_list = {};
 var my_channel = "jasdeep-status";
+
+
 
 function retrieve_update_deletes() {    
     pubnub.history({
