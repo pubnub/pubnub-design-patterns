@@ -42,7 +42,7 @@ In the original scenario, since each chat is a separate channel, I might have me
 {
     message_id: 10001,
     author: "user_a",
-    content: "What are you doing this weekend?"
+    content: "What are you doing this weekend?",
 	timestamp: 1425244035
 }
 {% endhighlight %}
@@ -55,7 +55,7 @@ In this Inbound Channel scenario, I might structure it a bit differently and add
 {% highlight ruby %}
 {
     message_id: 10001,
-    chat_id: "user_a_user_b"
+    chat_id: "user_a_user_b",
     author: "user_a",
     content: "What are you doing this weekend?",
 	timestamp: 1425244035
@@ -73,7 +73,7 @@ Lastly, I'll throw in a quick example of how it looks when do this Inbound metho
 {% highlight ruby %}
 {
     message_id: 10001,
-    chat_id: "group_chat_1234"
+    chat_id: "group_chat_1234",
     author: "user_a",
     content: "Did everyone buy tickets to the show yet?",
 	timestamp: 1425244035
