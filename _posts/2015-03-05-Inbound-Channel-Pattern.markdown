@@ -25,6 +25,8 @@ This means that to get all messages missed for User A, that user only needs to c
 
 ![User Inbound Channel]({{ site.baseurl }}/images/channels/channels.003.jpg)
 
+As you can see, Users B,C,D and E are all sending messages intended for separate 1-1 chats to User A's inbound channel. Just like 4 people sending me an email to my email address. Visually they will be separated in the UI, but as far as data is moved and organized, it's all coming in over a single channel, user a's inbound channel.
+
 ## Group Chat ##
 
 In the case of group chat, when User A publishes a message to the group, that user can issue multiple publishes, one for each user in the group -- into their inbound channel. If the group is quite large, let's say more than 10 people in the group chat, I may want to separate that particular chat into a separate channel like the original scenario. In that case, I still have reduced my history calls significantly. 
