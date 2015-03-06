@@ -9,7 +9,7 @@ PubNub stores all messages per channel with the Storage & Playback feature add-o
 
 ## 1-1 Chat ##
 
-It's quite natural to think of making a new channel for each pair of users to have a 1-1 chat. If I have 5 different people I have private chats with, that means I have 4 channels I publish and subscribe to. This also means when I start the app after being disconnected for a few hours, I have 4 calls to history() to get any missed messages. After a few months, I have accumulated more friends on the app, and now I have 40 friends each with 1-1 chats. Now when I fire up my app, I have to make 40 history calls to see what messages were missed. This is starting to accumulate and become inefficient.
+It's quite natural to think of making a new channel for each pair of users to have a 1-1 chat. If I have 4 different people I have private chats with, that means I have 4 channels I publish and subscribe to. This also means when I start the app after being disconnected for a few hours, I have 4 calls to history() to get any missed messages. After a few months, I have accumulated more friends on the app, and now I have 40 friends each with 1-1 chats. Now when I fire up my app, I have to make 40 history calls to see what messages were missed. This is starting to accumulate and become inefficient.
 
 ![Channels Per Chat]({{ site.baseurl }}/images/channels/channels.001.jpg)
 
