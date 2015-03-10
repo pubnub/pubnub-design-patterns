@@ -31,7 +31,7 @@ Pretty straightforward here:
 * Get the pubnub_flex_history from this repo (CDN url provided via rawgit)
 * Add the method to your instantiated pubnub object
 
-{% highlight javascript %}
+{% highlight html %}
 
 <script src="//cdn.pubnub.com/pubnub-3.7.8.js"></script>
 <script src="//cdn.rawgit.com/scalabl3/pubnub-flex-history/v1.01/pubnub-flex-history-min.js"></script>
