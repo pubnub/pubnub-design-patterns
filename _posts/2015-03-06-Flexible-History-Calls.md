@@ -20,7 +20,8 @@ The wrapper accepts a few parameters:
 
 In all the methods, it accepts both Unix epoch timestamps and PubNub 17-digit timetokens as strings or integers and converts automaticall.
 
-The Github repository with all the code, and instructions in the README are here: [Github](https://github.com/scalabl3/pubnub-flex-history)
+The Github repository with all the code, and instructions in the README are here:
+[https://github.com/scalabl3/pubnub-flex-history](https://github.com/scalabl3/pubnub-flex-history)
 
 ## Usage Summary ##
 
