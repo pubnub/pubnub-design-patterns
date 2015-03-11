@@ -12,7 +12,7 @@ messages) then it doesn't execute callback until all messages are retrieved.
 
 The wrapper accepts a few parameters:
 
-* **last**: retrieve the latest n messages
+* **last**: retrieve the latest n messages 
 * **since**: retrieve messages since a timetoken
 * **upto**: retrieve messages from first upto a timetoken
 * **between**: retrieve messages between timetokens
