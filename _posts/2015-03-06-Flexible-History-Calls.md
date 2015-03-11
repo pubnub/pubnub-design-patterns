@@ -12,7 +12,7 @@ messages) then it doesn't execute callback until all messages are retrieved.
 
 The wrapper accepts a few parameters:
 
-* **last**: retrieve the latest n messages 
+* **last**: retrieve the latest n messages
 * **since**: retrieve messages since a timetoken
 * **upto**: retrieve messages from first upto a timetoken
 * **between**: retrieve messages between timetokens
@@ -113,7 +113,7 @@ p.flex_history(options, flex_history_callback);
 
 Get all messages from first message in channel "up to" epoch timestamps or PubNub timetoken.
 
-```javascript
+{% highlight javascript %}
 
 var upto = 1426010693;
 
@@ -124,7 +124,7 @@ var options = {
 
 p.flex_history(options, flex_history_callback);
 
-```
+{% endhighlight %}
 
 ### between ###
 
