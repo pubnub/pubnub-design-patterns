@@ -14,6 +14,7 @@ The wrapper accepts a few parameters:
 
 * **last**: retrieve the latest n messages
 * **since**: retrieve messages since a timetoken
+* **upto**: retrieve messages from first upto a timetoken
 * **between**: retrieve messages between timetokens
 * **at**: retrieve a message at a timetoken
 * **getrange**: get the date range of first and most recent messages in a channel
@@ -107,6 +108,23 @@ var options = {
 p.flex_history(options, flex_history_callback);
 
 {% endhighlight %}
+
+### upto ###
+
+Get all messages from first message in channel "up to" epoch timestamps or PubNub timetoken.
+
+```javascript
+
+var upto = 1426010693;
+
+var options = {
+  channel: 'AAPL',
+  upto: upto
+}
+
+p.flex_history(options, flex_history_callback);
+
+```
 
 ### between ###
 
