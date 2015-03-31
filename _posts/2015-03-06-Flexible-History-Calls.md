@@ -35,7 +35,7 @@ Pretty straightforward here:
 {% highlight html %}
 
 <script src="//cdn.pubnub.com/pubnub-3.7.8.js"></script>
-<script src="//cdn.rawgit.com/scalabl3/pubnub-flex-history/v1.01/pubnub-flex-history-min.js"></script>
+<script src="//cdn.rawgit.com/scalabl3/pubnub-flex-history/v1.04/pubnub-flex-history-min.js"></script>
 
 <script>
   // Call Init first to create a PubNub instance, then add the wrapper method to that object
@@ -165,6 +165,21 @@ Get the start and end DateTime range of the channel, timetoken of first message 
 var options = {
   channel: 'AAPL',
   getrange: true
+}
+
+p.flex_history(options, flex_history_callback);
+
+{% endhighlight %}
+
+### getall ###
+
+Get all entirey message history available on the channel.
+
+{% highlight javascript %}
+
+var options = {
+  channel: 'AAPL',
+  getall: true
 }
 
 p.flex_history(options, flex_history_callback);
