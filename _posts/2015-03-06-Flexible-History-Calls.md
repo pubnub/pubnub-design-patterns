@@ -18,6 +18,7 @@ The wrapper accepts a few parameters:
 * **between**: retrieve messages between timetokens
 * **at**: retrieve a message at a timetoken
 * **getrange**: get the date range of first and most recent messages in a channel
+* **getall**: get all message history available in channel
 
 In all the methods, it accepts both Unix epoch timestamps and PubNub 17-digit timetokens as strings or integers and converts automaticall.
 
