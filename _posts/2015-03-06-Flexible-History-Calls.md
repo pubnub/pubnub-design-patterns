@@ -20,7 +20,7 @@ The wrapper accepts a few parameters:
 * **getrange**: get the date range of first and most recent messages in a channel
 * **getall**: get all message history available in channel
 
-In all the methods, it accepts both Unix epoch timestamps and PubNub 17-digit timetokens as strings or integers and converts automaticall.
+In all the methods, it accepts both Unix epoch timestamps and PubNub 17-digit timetokens as strings or integers and converts automatically.
 
 The Github repository with all the code, and instructions in the README are here:
 [https://github.com/scalabl3/pubnub-flex-history](https://github.com/scalabl3/pubnub-flex-history)
