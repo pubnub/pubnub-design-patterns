@@ -8,7 +8,7 @@ author: Jasdeep Jaitla
 Our Javascript History API allows you options for getting the time series data in a channel in flexible ways but always gives messages in 100 count pages.
 I wrote a simple wrapper that extends this functionality to handle the actual paging to retrieve messages based on time, counts, etc.
 
-**Note**: These methods retrieve and return results in an "all-at-once" fashion. That means that if you retrieve many pages of history (i.e 100+
+> **Note**: These methods retrieve and return results in an "all-at-once" fashion. That means that if you retrieve many pages of history (i.e 100+
 messages) then it doesn't execute callback with final results until *all* messages (i.e. all pages of messages) are retrieved.
 
 The wrapper accepts a few parameters:
