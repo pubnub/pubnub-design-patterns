@@ -49,3 +49,11 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+blockquote {
+    color: #ad4640;
+    border-left: 4px solid #e8e8e8;
+    padding-left: 15px;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+}
