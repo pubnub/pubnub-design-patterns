@@ -13,6 +13,7 @@ I wrote a simple wrapper that extends this functionality to handle the actual pa
 The wrapper accepts a few parameters:
 
 * **last**: retrieve the latest n messages
+* **before**: retrieve n messages published before a timetoken
 * **since**: retrieve messages since a timetoken
 * **upto**: retrieve messages from first upto a timetoken
 * **between**: retrieve messages between timetokens
