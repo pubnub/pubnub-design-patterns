@@ -29,14 +29,14 @@ The Github repository with all the code, and instructions in the README are here
 
 Pretty straightforward here:
 
-* Get the PubNub Javascript SDK
+* Get the PubNub Javascript SDK (must use 3.7.14 or newer as it has some bug fixes)
 * Get the pubnub_flex_history from this repo (CDN url provided via rawgit)
 * Add the method to your instantiated pubnub object
 
 {% highlight html %}
 
-<script src="//cdn.pubnub.com/pubnub-3.7.8.js"></script>
-<script src="//cdn.rawgit.com/scalabl3/pubnub-flex-history/v1.04/pubnub-flex-history-min.js"></script>
+<script src="//cdn.pubnub.com/pubnub-3.7.14.js"></script>
+<script src="//cdn.rawgit.com/scalabl3/pubnub-flex-history/v1.05/pubnub-flex-history-min.js"></script>
 
 <script>
   // Call Init first to create a PubNub instance, then add the wrapper method to that object
@@ -69,7 +69,7 @@ The general usage follows as:
 
     p.flex_history(options_object, completed_callback)
 
-options_object requires a channel name, and a command which is one of [last, since, between, at, getrange]
+options_object requires a channel name, and a command which is one of [last, before, since, upto, between, at, getrange, getall]
 
 {% highlight ruby %}
 {
@@ -87,6 +87,25 @@ Gets the last n messages from the channel.
 var options = {
   channel: 'AAPL',
   last: 30
+}
+
+p.flex_history(options, flex_history_callback);
+
+{% endhighlight %}
+
+### before ###
+
+Gets the last n messages from the channel, before the timetoken.
+
+{% highlight javascript %}
+
+var before = 1426010693;
+
+// get last 30 messages
+var options = {
+  channel: 'AAPL',
+  before: before,
+  msgcount: 30
 }
 
 p.flex_history(options, flex_history_callback);
