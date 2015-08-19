@@ -225,9 +225,17 @@ friends' "present" channels! We are only interested in the Presence Events in th
 
 {% highlight javascript linenos %}
 
+// Get the List of Friends
+p.channel_group_list_channels({
+  channel_group: "cg-user-a-friends",
+  callback: function(m) {
+    console.log("FRIENDLIST: ", m);
+  }
+});
+
 // Which Friends are online right now
 p.here_now({
-  channel_group: "cg-user-a-friends-pnpres",
+  channel_group: "cg-user-a-friends",
   callback: function(m) {
      console.log("ONLINE NOW: ", m);
   }
@@ -237,14 +245,7 @@ p.here_now({
 p.subscribe({
   channel_group: "cg-user-a-friends-pnpres",
   message: function(m,a,b,c) {
-    console.log("FRIENDS: ", m,a,b,c);
-  }
-});
-
-p.channel_group_channel_list({
-  channel_group: "cg-user-a-friends",
-  callback: function(m) {
-    console.log("FRIENDLIST: ", m);
+    console.log("FRIEND PRESENCE: ", m,a,b,c);
   }
 });
 
