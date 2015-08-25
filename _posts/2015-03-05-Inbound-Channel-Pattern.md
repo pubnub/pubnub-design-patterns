@@ -86,3 +86,4 @@ One little gem that you can do in addition to the above pattern is to enable an 
 ![Inbound + Hybrid Channels]({{ site.baseurl }}/images/channels/channels4.jpg)
 
 This allows you to more easily get the history of messages between two users, since the Inbound channel has messages mixed between all chats with every user that person is chatting with, it is harder to go back in time just to see only the messages between only that user and the user they were chatting with! So by publishing to Inbound and Hybrid channel you are simplifying the getting of new messages for all chats (Inbound), but also enabling going back in time to see messages between two users (Hybrid).
+
