@@ -1,0 +1,3 @@
+git push
+git push pubnub master:master
+git push pubnub master:gh-pages
