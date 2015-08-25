@@ -1,3 +1,4 @@
-git push
+git push origin master:master
+git push origin master:gh-pages
 git push pubnub master:master
 git push pubnub master:gh-pages
