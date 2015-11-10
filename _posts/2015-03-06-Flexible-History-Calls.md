@@ -5,10 +5,6 @@ date:   2015-03-08
 author: Jasdeep Jaitla
 ---
 
-***** Have to have 2 Channel Groups, one for Presence, one for Status, and you have to subscribe
-to the Channel Group -pnpres only *****
-
-
 Our Javascript History API allows you options for getting the time series data in a channel in flexible ways but always gives messages in 100 count pages.
 I wrote a simple wrapper that extends this functionality to handle the actual paging to retrieve messages based on time, counts, etc.
 

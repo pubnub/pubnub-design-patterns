@@ -251,6 +251,7 @@ p.subscribe({
 
 {% endhighlight %}
 
+
 ## Status Feed (Messages)
 
 The status-feed channel group is much more straightforward, you are going to subscribe directly to the
