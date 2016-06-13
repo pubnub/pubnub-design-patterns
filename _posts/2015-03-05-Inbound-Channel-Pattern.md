@@ -5,7 +5,8 @@ date:   2015-03-05
 author: Jasdeep Jaitla
 ---
 
-**Make sure you read this post all the way to the end! The Hybrid Pattern is at the bottom of the post.**
+**Make sure you read this post all the way to the end!**
+**The Hybrid Pattern is at the bottom of the post.**
 
 PubNub stores all messages per channel with the Storage & Playback feature add-on. We have a history call for retrieving messages that may have been missed due to being disconnected. Using this is a common pattern, but what if you have hundreds of channels? It becomes far less efficient to call history on every single one. How do you change how you use channels so that you can reduce the number of history calls?
 
