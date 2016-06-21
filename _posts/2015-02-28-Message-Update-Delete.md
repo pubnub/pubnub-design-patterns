@@ -242,8 +242,5 @@ pubnub.subscribe({
 
 With the Side Channel pattern, you want to retrieve history on the side channel first before retrieving the main history so that update/delete messages are processed at the same time as the original messages. 
 
-#### Final Note ####
 
-If you are retrieving and displaying hundreds or thousands of messages from history it is possible that the rendering might be slow. In a scenario such as this where messages are being *displayed as they are being processed* it's possible to display a message that is later updated or deleted! Of course that will be corrected when the update/delete message is processed. 
-
-To avoid this race condition, you can delay render until all messages have been processed, or you can use a Side Channel pattern described below.
+If you have any questions, please don't hesitate to make contact!
