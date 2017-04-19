@@ -38,10 +38,26 @@ In this diagram, the recipient is not sending a receipt for every message receiv
  send the receipt immediately, but rather, wait n seconds to see if any other messages are received before sending the receipt.
  This can reduce the receipt-publish:message-publish ratio and save a lot on message volume.
 
-## Multi-device Read State ##
+## Multi-Device Read State ##
 
+When you have multiple interfaces that can be using same application simultaneously, such as iPhone, iPad, Android, Browser, etc.
+ then keeping the notifications & messages "read state" of various chats and channels can make an application seem much more intelligent.
+When you look at a chat on one interface, essentially marking it as read, if you then still see it as unread on a second interface
+ it seems "broken."
+
+In order to keep this in sync, it's simply a matter of keeping track via a channel for each user.
+We can use something like: `user.[userID].readState` Each user subscribes and publishes a JSON dictionary of **timestamps** for each \[channel,
+conversationID, userID\] that they participate in.
+
+Every message that is older than these timestamps will be "unread", but in case you are using Inbound Channel design pattern,
+it's not necessarily based on channels but *conversations*. This allows you to have individual conversations have a read state, rather than
+just chronology alone.
 
 ![Basic]({{ site.baseurl }}/images/readreceipts/rr-3.jpg)
 
+In this diagram, the JSON dictionary of conversations or channels have timestamps, and any message within these channels or conversations
+that is older than the timestamp is unread. Every time a change occurs (i.e. a user taps or clicks on a conversation) this dictionary is updated
+ and published. When receiving the dictionary, the logic should be to only replace existing timestamps with newer timestamps in order to prevent race conditions.
+ To avoid an endless loop, don't publish an updated dictionary as a result of receiving one or you'll end up bouncing them back and forth!
 
 If you have any questions, please don't hesitate to make contact!

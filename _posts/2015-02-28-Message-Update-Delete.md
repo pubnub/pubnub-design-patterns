@@ -171,7 +171,6 @@ pubnub.publish({
 
 #### Sample Message Tracking Code ####
 
-I use code from [PubNub Flex History](http://scalabl3.github.io/pubnub-design-patterns/2015/03/08/Flexible-History-Calls.html)
 
 While the code for updating display content varies considerably with each platform/UI  framework, a simple example for a single channel follows:
 
