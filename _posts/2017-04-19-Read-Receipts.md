@@ -53,6 +53,11 @@ Every message that is older than these timestamps will be "unread", but in case 
 it's not necessarily based on channels but *conversations*. This allows you to have individual conversations have a read state, rather than
 just chronology alone.
 
+To go in more detail, in all cases, messages received for different conversations are received chronologically, however, the read state isn't chronological across
+all conversations but rather *per conversation*. Meaning you are marking a *conversation* as read, and all messages *in that conversation* as read.
+There may be other conversations with older/newer messages, but since the user did not tap/click on that conversation, they should stay *unread*.
+This pattern allows you keep track of read state per conversation (which may or may not be on separate channels).
+
 ![Basic]({{ site.baseurl }}/images/readreceipts/rr-3.jpg)
 
 In this diagram, the JSON dictionary of conversations or channels have timestamps, and any message within these channels or conversations
