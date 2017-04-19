@@ -69,7 +69,7 @@ Here is an example to see how sharding publishes from the client looks like:
 
 <br />
 
-## Updating This Post ##
+## Using Blocks to Fan-In ##
 
 I will be adding some more content to this post over time, the above covers the basics. Some of the content I will add includes:
 

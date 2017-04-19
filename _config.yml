@@ -1,6 +1,8 @@
 # Site settings
 title: PubNub Design Patterns
 email: jasdeep@pubnub.com
+name: Jasdeep Jaitla
+nametitle: Senior Solution Architect
 description: > # this means to ignore newlines until "baseurl:"
     Sample Design Patterns using PubNub to help customers understand various concepts
     using PubNub messages, channels, channel groups, storage-history, and other concepts.

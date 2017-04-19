@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Inbound Channel Pattern
+ltitle: Inbound Channel Pattern
+stitle: Efficient 1-1 Chat Architecture
 date:   2015-03-05
 author: Jasdeep Jaitla
 ---

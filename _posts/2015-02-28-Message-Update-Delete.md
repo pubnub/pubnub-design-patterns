@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Message Updates and Deletes
+ltitle: Message Updates and Deletes
+stitle: Simulating Message Transformation in an Immutable System
 date:   2015-02-26
 author: Jasdeep Jaitla
 ---
