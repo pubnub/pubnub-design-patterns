@@ -46,7 +46,7 @@ When you look at a chat on one interface, essentially marking it as read, if you
  it seems "broken."
 
 In order to keep this in sync, it's simply a matter of keeping track via a channel for each user.
-We can use something like: `user.[userID].readState` Each user subscribes and publishes a JSON dictionary of **timestamps** for each \[channel,
+We can use something like: `user.[userID].read-status` Each user subscribes and publishes a JSON dictionary of **timestamps** for each \[channel,
 conversationID, userID\] that they participate in.
 
 Every message that is older than these timestamps will be "unread", but in case you are using Inbound Channel design pattern,
